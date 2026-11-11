@@ -54,7 +54,7 @@ Absolutely none!
 
 # Source Code Organization
 This final-project- repository will contain the buildroot configuration.\
-The rest of the project source will exist in the [LoRa-RC repo.](https://github.com/DysonTheSphere/final-project-assignment-LoRa-RC)
+The rest of the project source will exist in the [LoRa-RC repo](https://github.com/DysonTheSphere/final-project-assignment-LoRa-RC).
 - **`driver/`**: Custom character driver handling GPIO interrupts
 - **`daemon/`**: User-space C daemon to monitor the driver and control LEDs via `libgpiod`.
 - **`receiver/`**: AT configuration and reference for the Pi-ified DX-LR30.
