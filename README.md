@@ -47,7 +47,7 @@ Using the Linux GPIO descriptor interface and irq system to capture interrupt ev
 ### User-Space GPIO Control
 Integrating `libgpiod` into Buildroot and the user-space daemon.
 ### LoRa RF Link & AT Commands
-Configuring and operating the two 915 MHz DX-LR30 transceivers for UART PTP communication.
+Configuring and operating the two 915 MHz DX-LR30 transceivers for UART P2P communication.
 
 # Shared Material
 Absolutely none!
