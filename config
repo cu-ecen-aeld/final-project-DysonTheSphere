@@ -1,0 +1,20 @@
+#!/bin/bash
+
+BR_DIR="buildroot"
+DEFCONFIG="$(pwd)/conf/rpi3_lora_defconfig"
+
+case "${1:-menuconfig}" in
+    load)
+        make -C "$BR_DIR" defconfig BR2_DEFCONFIG="$DEFCONFIG"
+        ;;
+    save)
+        make -C "$BR_DIR" savedefconfig BR2_DEFCONFIG="$DEFCONFIG"
+        ;;
+    menuconfig)
+        make -C "$BR_DIR" menuconfig
+        ;;
+    *)
+        echo "Usage: ./config [menuconfig|load|save]"
+        exit 1
+        ;;
+esac
